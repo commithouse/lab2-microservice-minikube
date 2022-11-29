@@ -12,25 +12,27 @@ docker-compose up -d
 comando para BUILD da imagem:
 
 ```
-docker build .
+docker build -t professorms:latest .
 ```
-
 
 ### EXAMPLE MINIKUBE
 
 #### K8s manifest files
-* mongo-config.yaml
-* mongo-secret.yaml
-* mongo.yaml
-* webapp.yaml
+* postgres-config.yaml
+* postgres-secret.yaml
+* postgres.yaml
+* spring-boot.yaml
 
 #### K8s commands
 
 ##### start Minikube and check status
     minikube start --vm-driver=hyperkit 
     minikube status
+
+##### comandos para mudar para o registry local ao inves do docker hub
     minikube docker-env
     minikube docker-env | Invoke-Expression
+    docker images
 
 ##### get minikube node's ip address
     minikube ip
@@ -58,12 +60,7 @@ docker build .
 ##### stop your Minikube cluster
     minikube stop
 
-<br />
-
-> :warning: **Known issue - Minikube IP not accessible**
-
-If you can't access the NodePort service webapp with `MinikubeIP:NodePort`, execute the following command:
-
+#### abrir browser com url do serviço
     minikube service webapp-service
 
 <br />
@@ -72,4 +69,4 @@ If you can't access the NodePort service webapp with `MinikubeIP:NodePort`, exec
 * mongodb image on Docker Hub: https://hub.docker.com/_/mongo
 * webapp image on Docker Hub: https://hub.docker.com/repository/docker/nanajanashia/k8s-demo-app
 * k8s official documentation: https://kubernetes.io/docs/home/
-* webapp code repo: https://gitlab.com/nanuchi/developing-with-docker/-/tree/feature/k8s-in-hour
+* exemplo de webapp code repo: https://gitlab.com/nanuchi/developing-with-docker/-/tree/feature/k8s-in-hour
