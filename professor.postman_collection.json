@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "1294f3eb-832b-42f5-9206-f5c674c5b296",
+		"name": "professor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4634357"
+	},
+	"item": [
+		{
+			"name": "getProfessores",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "createProfessor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"email\":\"daniel@mailinator.com\",\r\n        \"endereco\": \"AV Paulista 1000\",\r\n        \"nome\": \"Daniel Lemes\",\r\n        \"situacao\": \"ativo\",\r\n        \"telefone\": \"11-91234-1234\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/professor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"professor"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
