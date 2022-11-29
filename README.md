@@ -1,4 +1,4 @@
-# Microserviço Professor
+# Microserviço Professor no K8S
 
 Exemplo de projeto de implementação de microserviço usando java spring boot
 e Banco de dados postgres sendo publicado no kubernetes (minikube)
