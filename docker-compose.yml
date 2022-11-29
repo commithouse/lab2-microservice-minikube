@@ -1,0 +1,19 @@
+version: '3.1'
+services:
+  ms:
+    image: professorms
+    container_name: ms
+    build: .
+    ports:
+      - 8080:8080
+    depends_on:
+      - db
+  db:
+    image: postgres:11
+    container_name: db
+    environment:
+      POSTGRES_USER: daniel
+      POSTGRES_PASSWORD: 1234
+    ports:
+      - 5432:5432
+      
