@@ -1,7 +1,7 @@
 # Microserviço Professor
 
 Exemplo de projeto de implementação de microserviço usando java spring boot
-Banco de dados postgres
+e Banco de dados postgres sendo publicado no kubernetes (minikube)
 
 comando para BUILD e criação da imagem e dos containers usando docker-compose:
 
@@ -56,7 +56,8 @@ docker build -t professorms:latest .
 
 ##### get application logs
     kubectl logs {pod-name}
-
+#### dashboards minikube
+    minikube dashboard
 ##### stop your Minikube cluster
     minikube stop
 
