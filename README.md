@@ -71,5 +71,6 @@ docker build -t professorms:latest .
 * k8s official documentation: https://kubernetes.io/docs/home/
 * exemplo de webapp mongo + node code repo: https://gitlab.com/nanuchi/developing-with-docker/-/tree/feature/k8s-in-hour
 * mongodb image on Docker Hub: https://hub.docker.com/_/mongo
+* rodando minikube com local images no windows: https://medium.com/@maumribeiro/running-your-own-docker-images-in-minikube-for-windows-ea7383d931f6
 * webapp image on Docker Hub: https://hub.docker.com/repository/docker/nanajanashia/k8s-demo-app
 
